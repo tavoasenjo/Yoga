@@ -1,0 +1,23 @@
+@import "setup";
+
+@mixin fontSize($number){
+	font-size: $number * 1px;
+	font-size: ($number / 10) * 1rem;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	@include fontSize(16);
+}
+
+h1{
+	@include fontSize(48);
+}
+
+// header{
+// 	background: url()
+// }
+
